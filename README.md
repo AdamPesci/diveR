@@ -12,9 +12,9 @@
 
 ## Prerequisites:
 1. Python installed on machine.
-2. Node/NPM installed on machine.
-3. R installed on machine.
-4. Git installed on machine.
+1. Node/NPM installed on machine.
+1. R installed on machine.
+1. Git installed on machine.
 
 #### Python
 https://www.python.org/downloads/
