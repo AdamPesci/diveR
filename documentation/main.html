@@ -1,0 +1,879 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>main package &mdash; DiveR  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to DiveR’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> DiveR
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">main package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Parser">Parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Calculations">Calculations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-DiveConstants">DiveConstants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-FileLoader">FileLoader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-FileWriter">FileWriter module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-Main">Main module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">DiveR</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>main package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/main.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="main-package">
+<h1>main package<a class="headerlink" href="#main-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-Parser">
+<span id="parser-module"></span><h2>Parser module<a class="headerlink" href="#module-Parser" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Adam Camer-Pesci, Augustine Italiano</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>V2 of Parser module.
+V2 created by Adam Camer-pesci
+V1 created by Adam Camer-Pesci &amp; Augustine Italiano</p>
+<p>Class for Parsing raw data to JSON format</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Parser.BuhlmannParser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.</span></span><span class="sig-name descname"><span class="pre">BuhlmannParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.BuhlmannParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Parser.Parser" title="Parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser.Parser</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.BuhlmannParser.parse_json">
+<span class="sig-name descname"><span class="pre">parse_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ascent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.BuhlmannParser.parse_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>implementation of Parser parse_json method for decompression models:</p>
+<p>ZH-L16A,
+ZH-L16B,
+ZH-L16C</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Parser.BuzzacotParser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.</span></span><span class="sig-name descname"><span class="pre">BuzzacotParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.BuzzacotParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Parser.Parser" title="Parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser.Parser</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.BuzzacotParser.parse_json">
+<span class="sig-name descname"><span class="pre">parse_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ascent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.BuzzacotParser.parse_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>implementation of Parser parse_json method for decompression model:</p>
+<p>Buzzacott</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Parser.HaldaneParser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.</span></span><span class="sig-name descname"><span class="pre">HaldaneParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.HaldaneParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Parser.Parser" title="Parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser.Parser</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.HaldaneParser.parse_json">
+<span class="sig-name descname"><span class="pre">parse_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ascent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.HaldaneParser.parse_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>implementation of Parser parse_json method for decompression models:</p>
+<p>Haldane</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Parser.Parser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.</span></span><span class="sig-name descname"><span class="pre">Parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.Parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Base class for parsing different diving models to JSON format</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.Parser.get_list_json">
+<span class="sig-name descname"><span class="pre">get_list_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Parser.Parser.get_list_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the list of json objects (dive profiles)</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">returns dictionary</dt>
+<dd class="field-odd"><p>JSON object list</p>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.Parser.parse_json">
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">parse_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ascent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.Parser.parse_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>interface for converting the dive profile to a json object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>summary</strong> – dataframe:
+a dataframe containing columns: MaxIns, MaxBub, N2CP, Surf</p></li>
+<li><p><strong>gf_data</strong> – list:
+a list containing gradient factor calculation results</p></li>
+<li><p><strong>fileName</strong> – string:
+a string containing the file name for the dive</p></li>
+<li><p><strong>model</strong> – string:
+a string containing the model chosen for the dive</p></li>
+<li><p><strong>kwargs</strong> – optional keyword arguments - used to toggle gradient factor output (kwargs as some models wont require a toggle)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="Parser.WorkmanParser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Parser.</span></span><span class="sig-name descname"><span class="pre">WorkmanParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.WorkmanParser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#Parser.Parser" title="Parser.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">Parser.Parser</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Parser.WorkmanParser.parse_json">
+<span class="sig-name descname"><span class="pre">parse_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">otu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_ascent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fileName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Parser.WorkmanParser.parse_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>implementation of Parser parse_json method for decompression model:</p>
+<p>Workman65</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Calculations">
+<span id="calculations-module"></span><h2>Calculations module<a class="headerlink" href="#module-Calculations" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Adam Camer-Pesci, Ryan Forster</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>This file contains the methods used to perform calculations on scuba diving profiles.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Calculations.Calculations">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">Calculations.</span></span><span class="sig-name descname"><span class="pre">Calculations</span></span><a class="headerlink" href="#Calculations.Calculations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.ambient_pressures">
+<span class="sig-name descname"><span class="pre">ambient_pressures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dive</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.ambient_pressures" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates ambient pressures</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dive</strong> – dataframe:
+a dataframe containing columns: time and depth</p>
+</dd>
+<dt class="field-even">Returns float[]</dt>
+<dd class="field-even"><p>a list of ambient pressures at each time point</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.compartment_pressures">
+<span class="sig-name descname"><span class="pre">compartment_pressures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dive_profile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">halftime_set</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.compartment_pressures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets compartment pressures from dive profile based on given half time set.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – dataframe:
+a dataframe containing columns: time and depth</p></li>
+<li><p><strong>halftime_set</strong> – str:
+the name of the halftime set to be used</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="field-list simple">
+<dt class="field-odd">cp</dt>
+<dd class="field-odd"><p>a dataframe containing compartment pressures from 1,1b - 16</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.gradient_factors">
+<span class="sig-name descname"><span class="pre">gradient_factors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compartment_pressures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">halftime_set</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surf_vals</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.gradient_factors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the maximum percentage of the respective M-value any compartment reaches known as the GFHigh and GFLow specific to the user selected halftime set,
+Finds the depth at which any compartment reaches 100% of its m value and finds the first miss according to that depth.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – dataframe:
+a dataframe containing columns: time and depth</p></li>
+<li><p><strong>compartment_pressures</strong> – dataframe:
+a dataframe containing compartment pressures specific to each halftime set</p></li>
+<li><p><strong>halftime_set</strong> – str:
+the name of the halftime set to be used</p></li>
+<li><p><strong>surf_vals</strong> – array:
+a 2D array containing the surface values for nitrogen and helium needed to calculate the GFHigh values</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns list</dt>
+<dd class="field-even"><dl class="field-list simple">
+<dt class="field-odd">GF_Lows_final</dt>
+<dd class="field-odd"><p>all final values GFLowNMax</p>
+</dd>
+<dt class="field-even">GF_Lows_max_max</dt>
+<dd class="field-even"><p>the maximum value of all GFLowNMax values,</p>
+</dd>
+<dt class="field-odd">gf_100D</dt>
+<dd class="field-odd"><p>an integer representing the depth at which a compartment hits 100% of its m value</p>
+</dd>
+<dt class="field-even">first_miss</dt>
+<dd class="field-even"><p>the closest multiple of 3 to gf_100D</p>
+</dd>
+<dt class="field-odd">GF_Highs</dt>
+<dd class="field-odd"><p>all GFHigh values</p>
+</dd>
+<dt class="field-even">GF_Highs_max</dt>
+<dd class="field-even"><p>the maximum value of all GFHigh values</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.helium_inert_pressure">
+<span class="sig-name descname"><span class="pre">helium_inert_pressure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ambient_pressures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gasses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dive</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.helium_inert_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate inert gas partial pressure of helium at each time point</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ambient_pressures</strong> – float[]:
+a list of ambient pressures at each time point</p></li>
+<li><p><strong>gasses</strong> – array:
+an array containing the gas mix in order [helium, nitrogen, oxygen]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns float[]</dt>
+<dd class="field-even"><p>the inert gas partial pressure of helium at each time point</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.initialise_dive">
+<span class="sig-name descname"><span class="pre">initialise_dive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gas_combinations</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.initialise_dive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates and initialises the dive_profile object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – dataframe:
+a dataframe containing columns: time and depth</p></li>
+<li><p><strong>gas_combinations</strong> – list:
+A list of gases in the format [[fO2,fHe,fN2,time]]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns tuple</dt>
+<dd class="field-even"><dl class="field-list simple">
+<dt class="field-odd">dive_profile</dt>
+<dd class="field-odd"><p>a scuba dive object</p>
+</dd>
+<dt class="field-even">gas_list</dt>
+<dd class="field-even"><p>a list of scuba gas objects</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.max_ascent">
+<span class="sig-name descname"><span class="pre">max_ascent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dive_csv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.max_ascent" title="Permalink to this definition">¶</a></dt>
+<dd><p>finds the maximum ascent rate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dive_csv</strong> – dataframe:
+a dataframe containing columns: time and depth</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the maximum ascent rate</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.max_values">
+<span class="sig-name descname"><span class="pre">max_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ambient_pressures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compartment_pressures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">totalIPP</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nIPP</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heIPP</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.max_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>merges max_bubble, max_inspired into a single function
+Calculates max inspired, bubble and surf values as well as recording the compartment pressure values at the time of max bubble</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ambient_pressures</strong> – float[]:
+a list of ambient pressures at each time point (depth/10)</p></li>
+<li><p><strong>compartment_pressures</strong> – float[]:
+a list of compartment pressure values (cp_value)</p></li>
+<li><p><strong>totalIPP</strong> – float[]:
+the total inert gas partial pressure at given time points</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns float[]</dt>
+<dd class="field-even"><p>max_values : array containing the collumns:</p>
+<dl class="field-list simple">
+<dt class="field-odd">max_ins</dt>
+<dd class="field-odd"><p>cp_value - totalIPP</p>
+</dd>
+<dt class="field-even">max_bub</dt>
+<dd class="field-even"><p>cp_value - ambient_pressure</p>
+</dd>
+<dt class="field-odd">n2_cp</dt>
+<dd class="field-odd"><p>cp_value where maxbub occured</p>
+</dd>
+<dt class="field-even">he_cp</dt>
+<dd class="field-even"><p>helium cp_value where maxbub occured</p>
+</dd>
+<dt class="field-odd">surf</dt>
+<dd class="field-odd"><p>the cp when the diver surfaces.</p>
+</dd>
+<dt class="field-even">he_surf</dt>
+<dd class="field-even"><p>the helium cp when the diver surfaces</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.nitrogen_inert_pressure">
+<span class="sig-name descname"><span class="pre">nitrogen_inert_pressure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ambient_pressures</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gasses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dive</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.nitrogen_inert_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate inert gas partial pressure of nitrogen at each time point</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ambient_pressures</strong> – float[]:
+a list of ambient pressures at each time point</p></li>
+<li><p><strong>gasses</strong> – array:
+an array containing the gas mix in order [helium, nitrogen, oxygen]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns float[]</dt>
+<dd class="field-even"><p>the inert gas partial pressure of nitrogen at each time point</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.o2_tox">
+<span class="sig-name descname"><span class="pre">o2_tox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dive_profile</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.o2_tox" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculates oxygen toxcity exposure</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dive_profile</strong> – dive:
+a dive profile to test OTU level</p>
+</dd>
+<dt class="field-even">Returns float</dt>
+<dd class="field-even"><p>value representing pulmonary oxygen toxicity dose for a given dive profile and breathing gas
+is NaN if scuba is unable to calculate.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.totalIPP">
+<span class="sig-name descname"><span class="pre">totalIPP</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nIPP</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">heIPP</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.totalIPP" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate the total inert gas partial pressure of nitrogen and helium at each time point</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>niPP</strong> – float[]:
+the inert gas partial pressure of nitrogen at a given time points</p></li>
+<li><p><strong>heIPP</strong> – float[]:
+the inert gas partial pressure of helium at a given time points</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns float[]</dt>
+<dd class="field-even"><p>the total inert gas partial pressure at given time points</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Calculations.Calculations.trimix_list">
+<span class="sig-name descname"><span class="pre">trimix_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gas_combinations</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Calculations.Calculations.trimix_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>converts gas_combination string into trimix gas objects</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gas_combinations</strong> – dataframe:
+a list of strings in the format [[f02 fHe fN2 time][…]]</p>
+</dd>
+<dt class="field-even">Returns tuple</dt>
+<dd class="field-even"><dl class="field-list simple">
+<dt class="field-odd">gas_list</dt>
+<dd class="field-odd"><p>a list of trimix gas objects</p>
+</dd>
+<dt class="field-even">time_list</dt>
+<dd class="field-even"><p>a list of times to pair with gas_list</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-DiveConstants">
+<span id="diveconstants-module"></span><h2>DiveConstants module<a class="headerlink" href="#module-DiveConstants" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Ryan Forster</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>This file contains constants from Tables 2 and 4 from “Understanding M-values” By Erik C. Baker, P.E.
+Used for the calculation of gradient factors</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.DSAT_N_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">DSAT_N_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[30.42,</span> <span class="pre">25.37,</span> <span class="pre">20.54,</span> <span class="pre">18.34,</span> <span class="pre">17.11,</span> <span class="pre">15.79,</span> <span class="pre">15.11,</span> <span class="pre">14.69]</span></em><a class="headerlink" href="#DiveConstants.DSAT_N_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>DSAT nitrogen surfacing m-value in order [1, 2, …]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.HALDANE_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">HALDANE_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2.0</span></em><a class="headerlink" href="#DiveConstants.HALDANE_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Haldane M value constant</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.WORKMAN_N_DELTA">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">WORKMAN_N_DELTA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[1.8,</span> <span class="pre">1.6,</span> <span class="pre">1.5,</span> <span class="pre">1.4,</span> <span class="pre">1.3,</span> <span class="pre">1.2,</span> <span class="pre">1.15,</span> <span class="pre">1.1,</span> <span class="pre">1.1]</span></em><a class="headerlink" href="#DiveConstants.WORKMAN_N_DELTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workman nitrogen delta slope values in order [1, 2, …]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.WORKMAN_N_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">WORKMAN_N_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[31.7,</span> <span class="pre">26.8,</span> <span class="pre">21.9,</span> <span class="pre">17.0,</span> <span class="pre">16.4,</span> <span class="pre">15.8,</span> <span class="pre">15.5,</span> <span class="pre">15.5,</span> <span class="pre">15.2]</span></em><a class="headerlink" href="#DiveConstants.WORKMAN_N_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Workman nitrogen surfacing m-value in order [1, 2, …]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16A_N_DELTA">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16A_N_DELTA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[1.9082,</span> <span class="pre">1.7928,</span> <span class="pre">1.5352,</span> <span class="pre">1.3847,</span> <span class="pre">1.278,</span> <span class="pre">1.2306,</span> <span class="pre">1.1857,</span> <span class="pre">1.1504,</span> <span class="pre">1.1223,</span> <span class="pre">1.0999,</span> <span class="pre">1.0844,</span> <span class="pre">1.0731,</span> <span class="pre">1.0635,</span> <span class="pre">1.0552,</span> <span class="pre">1.0478,</span> <span class="pre">1.0414,</span> <span class="pre">1.0359]</span></em><a class="headerlink" href="#DiveConstants.ZHL16A_N_DELTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16A nitrogen delta slope values in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16A_N_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16A_N_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[32.4,</span> <span class="pre">29.6,</span> <span class="pre">25.4,</span> <span class="pre">22.5,</span> <span class="pre">20.3,</span> <span class="pre">19.0,</span> <span class="pre">17.8,</span> <span class="pre">16.8,</span> <span class="pre">15.9,</span> <span class="pre">15.2,</span> <span class="pre">14.6,</span> <span class="pre">14.2,</span> <span class="pre">13.9,</span> <span class="pre">13.5,</span> <span class="pre">13.2,</span> <span class="pre">12.9,</span> <span class="pre">12.7]</span></em><a class="headerlink" href="#DiveConstants.ZHL16A_N_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16A nitogen surfacing m-value in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16B_HE_DELTA">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16B_HE_DELTA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[2.3557,</span> <span class="pre">2.0964,</span> <span class="pre">1.74,</span> <span class="pre">1.5321,</span> <span class="pre">1.3845,</span> <span class="pre">1.3189,</span> <span class="pre">1.2568,</span> <span class="pre">1.2079,</span> <span class="pre">1.1692,</span> <span class="pre">1.1419,</span> <span class="pre">1.1232,</span> <span class="pre">1.1115,</span> <span class="pre">1.1022,</span> <span class="pre">1.0963,</span> <span class="pre">1.0904,</span> <span class="pre">1.085,</span> <span class="pre">1.0791]</span></em><a class="headerlink" href="#DiveConstants.ZHL16B_HE_DELTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16B helium delta slope values in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16B_HE_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16B_HE_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[41.0,</span> <span class="pre">37.2,</span> <span class="pre">31.2,</span> <span class="pre">27.2,</span> <span class="pre">24.3,</span> <span class="pre">22.4,</span> <span class="pre">20.8,</span> <span class="pre">19.4,</span> <span class="pre">18.2,</span> <span class="pre">17.4,</span> <span class="pre">16.8,</span> <span class="pre">16.4,</span> <span class="pre">16.2,</span> <span class="pre">16.1,</span> <span class="pre">16.1,</span> <span class="pre">16.0,</span> <span class="pre">15.9]</span></em><a class="headerlink" href="#DiveConstants.ZHL16B_HE_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16B helium surfacing m-value in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16B_N_DELTA">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16B_N_DELTA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[1.9082,</span> <span class="pre">1.7928,</span> <span class="pre">1.5352,</span> <span class="pre">1.3847,</span> <span class="pre">1.278,</span> <span class="pre">1.2306,</span> <span class="pre">1.1857,</span> <span class="pre">1.1504,</span> <span class="pre">1.1223,</span> <span class="pre">1.0999,</span> <span class="pre">1.0844,</span> <span class="pre">1.0731,</span> <span class="pre">1.0635,</span> <span class="pre">1.0552,</span> <span class="pre">1.0478,</span> <span class="pre">1.0414,</span> <span class="pre">1.0359]</span></em><a class="headerlink" href="#DiveConstants.ZHL16B_N_DELTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16B nitrogen delta slope values in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16B_N_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16B_N_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[32.4,</span> <span class="pre">29.6,</span> <span class="pre">25.4,</span> <span class="pre">22.5,</span> <span class="pre">20.3,</span> <span class="pre">19.0,</span> <span class="pre">17.5,</span> <span class="pre">16.5,</span> <span class="pre">15.7,</span> <span class="pre">15.2,</span> <span class="pre">14.6,</span> <span class="pre">14.2,</span> <span class="pre">13.9,</span> <span class="pre">13.4,</span> <span class="pre">13.2,</span> <span class="pre">12.9,</span> <span class="pre">12.7]</span></em><a class="headerlink" href="#DiveConstants.ZHL16B_N_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16B nitogen surfacing m-value in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16C_N_DELTA">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16C_N_DELTA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[1.9082,</span> <span class="pre">1.7928,</span> <span class="pre">1.5352,</span> <span class="pre">1.3847,</span> <span class="pre">1.278,</span> <span class="pre">1.2306,</span> <span class="pre">1.1857,</span> <span class="pre">1.1504,</span> <span class="pre">1.1223,</span> <span class="pre">1.0999,</span> <span class="pre">1.0844,</span> <span class="pre">1.0731,</span> <span class="pre">1.0635,</span> <span class="pre">1.0552,</span> <span class="pre">1.0478,</span> <span class="pre">1.0414,</span> <span class="pre">1.0359]</span></em><a class="headerlink" href="#DiveConstants.ZHL16C_N_DELTA" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16C nitrogen delta slope values in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="DiveConstants.ZHL16C_N_M_NAUGHT">
+<span class="sig-prename descclassname"><span class="pre">DiveConstants.</span></span><span class="sig-name descname"><span class="pre">ZHL16C_N_M_NAUGHT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">[32.4,</span> <span class="pre">29.6,</span> <span class="pre">25.4,</span> <span class="pre">22.5,</span> <span class="pre">20.3,</span> <span class="pre">18.5,</span> <span class="pre">16.9,</span> <span class="pre">15.9,</span> <span class="pre">15.2,</span> <span class="pre">14.7,</span> <span class="pre">14.3,</span> <span class="pre">14.0,</span> <span class="pre">13.7,</span> <span class="pre">13.4,</span> <span class="pre">13.1,</span> <span class="pre">12.9,</span> <span class="pre">12.7]</span></em><a class="headerlink" href="#DiveConstants.ZHL16C_N_M_NAUGHT" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZH-L16C nitogen surfacing m-value in order [1, 1b, 2, … 16]</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-FileLoader">
+<span id="fileloader-module"></span><h2>FileLoader module<a class="headerlink" href="#module-FileLoader" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Adam Camer-Pesci, Augustine Italiano</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Class for file loading interface
+This file contains the various implementations used to load different file types.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="FileLoader.ANSLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">FileLoader.</span></span><span class="sig-name descname"><span class="pre">ANSLoader</span></span><a class="headerlink" href="#FileLoader.ANSLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FileLoader.FileLoader" title="FileLoader.FileLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileLoader.FileLoader</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FileLoader.ANSLoader.generate_gas_list">
+<span class="sig-name descname"><span class="pre">generate_gas_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gas_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileLoader.ANSLoader.generate_gas_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate gas list from .ans file gas codes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gas_data</strong> – dataframe: dataframe created by ans_loader.load. Dataframe contains times and gas codes</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="field-list simple">
+<dt class="field-odd">gas_list</dt>
+<dd class="field-odd"><p>list:
+list in format [fO2, fHe, fN2, time] representing gas in trimix format</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileLoader.ANSLoader.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileLoader.ANSLoader.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>load .ans filetypes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file_paths</strong> – list: list of 1-n filepath strings.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="field-list simple">
+<dt class="field-odd">r_fames_list</dt>
+<dd class="field-odd"><p>a list of dataframes representing just the ans files time and depth time stamps (R compatiable)</p>
+</dd>
+<dt class="field-even">frames_path_list</dt>
+<dd class="field-even"><p>a list of paths that were valid and used in creating dataframes</p>
+</dd>
+<dt class="field-odd">gas_list</dt>
+<dd class="field-odd"><p>a list of gas codes and depths containing the gas changes during the dive</p>
+</dd>
+<dt class="field-even">extra_calc_list</dt>
+<dd class="field-even"><p>a list of Strings for each dive that have the dcs incident report and comments about it</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FileLoader.CSVLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">FileLoader.</span></span><span class="sig-name descname"><span class="pre">CSVLoader</span></span><a class="headerlink" href="#FileLoader.CSVLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FileLoader.FileLoader" title="FileLoader.FileLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileLoader.FileLoader</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FileLoader.CSVLoader.load">
+<span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileLoader.CSVLoader.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>load .csv filetypes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filepaths</strong> – list: list of 1-n filepath strings.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="field-list simple">
+<dt class="field-odd">csv_files</dt>
+<dd class="field-odd"><p>a list of dataframes representing dive profiles</p>
+</dd>
+<dt class="field-even">csv_paths</dt>
+<dd class="field-even"><p>a list of strings representing valid filepaths</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FileLoader.FileLoader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">FileLoader.</span></span><span class="sig-name descname"><span class="pre">FileLoader</span></span><a class="headerlink" href="#FileLoader.FileLoader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Base class for loading different types of files</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FileLoader.FileLoader.load">
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_paths</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileLoader.FileLoader.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileLoader.FileLoader.write_log">
+<span class="sig-name descname"><span class="pre">write_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileLoader.FileLoader.write_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>error log writing method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – str: path of associated file</p></li>
+<li><p><strong>message</strong> – str: message to write to log</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-FileWriter">
+<span id="filewriter-module"></span><h2>FileWriter module<a class="headerlink" href="#module-FileWriter" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Adam Camer-Pesci, Augustine Italiano</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>Class for file loading interface
+This file contains the various implementations used to load different file types.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="FileWriter.CSVWriter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">FileWriter.</span></span><span class="sig-name descname"><span class="pre">CSVWriter</span></span><a class="headerlink" href="#FileWriter.CSVWriter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#FileWriter.FileWriter" title="FileWriter.FileWriter"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileWriter.FileWriter</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FileWriter.CSVWriter.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_toggle</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileWriter.CSVWriter.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>write structured JSON dictionary to csv file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> – str: the output file path</p></li>
+<li><p><strong>json_list</strong> – dict: A JSON object as python dictionary</p></li>
+<li><p><strong>gf_toggle</strong> – bool: boolean to determine if user wants to write gf calcs to file</p></li>
+<li><p><strong>kwargs</strong> – key-word arguments used for ans file reading</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="FileWriter.FileWriter">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">FileWriter.</span></span><span class="sig-name descname"><span class="pre">FileWriter</span></span><a class="headerlink" href="#FileWriter.FileWriter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<p>Base class for writing different types of files</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="FileWriter.FileWriter.write">
+<em class="property"><span class="pre">abstract</span> </em><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gf_toggle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileWriter.FileWriter.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="FileWriter.FileWriter.write_log">
+<span class="sig-name descname"><span class="pre">write_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#FileWriter.FileWriter.write_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>error log writing method
+:param path: path of associated file
+:param message: message to write to log</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-Main">
+<span id="main-module"></span><h2>Main module<a class="headerlink" href="#module-Main" title="Permalink to this headline">¶</a></h2>
+<dl class="field-list simple">
+<dt class="field-odd">Author(s) Adam Camer-Pesci</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<p>This class acts as the control centre for the backend components.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="Main.main">
+<span class="sig-prename descclassname"><span class="pre">Main.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Main.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes calculations for each dive profile provided by user and pipes result to front-end for display</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="Main.write_log">
+<span class="sig-prename descclassname"><span class="pre">Main.</span></span><span class="sig-name descname"><span class="pre">write_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Main.write_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>error log writing method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – path of associated file</p></li>
+<li><p><strong>message</strong> – message to write to log</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to DiveR’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alex B, Adam C, Augustine I, Ryan F, Ryan P.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="../electronJS/Imports/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="index.css">
+	<link href="../electronJS/Imports/material-components-web.min.css" rel="stylesheet">
+	<script src="../electronJS/Imports/material-components-web.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+	<div id="flex-box">
+		<div class="side-container">
+			<div class="top-corners inner-shadow" id="top-left-corner">
+				<div id="logo-container">
+					<span class="logo"></span>
+				</div>
+			</div>
+			<input type="file" id="input-file" hidden="hidden" accept=".csv, .ans, .txt" multiple>
+			<div class="upload-btn-container">
+				<button class="mdc-button mdc-button--raised mdc-button--leading" id="upload-btn">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true" id="upload-icon">upload</i>
+					<span class="mdc-button__label text-alignment" id="upload-btn-label">Upload Files</span>
+				</button>
+
+			</div>
+
+			<div class="title-block file-viewer shadow" id="file-viewer">
+				<ul class="directory-list" id="file-viewer-list-container">
+					<li class="folder file-list-item">
+						<label for="folder" id="folder-label">No Files Uploaded</label>
+						<ul id="file-viewer-list">
+						</ul>
+					</li>
+				</ul>
+				</ul>
+			</div>
+			<div class="file-output-container">
+				<button class="mdc-button mdc-button--raised mdc-button--leading" id="save-as-btn">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true" id="save-as-icon">save</i>
+					<span class="mdc-button__label text-alignment" id="save-as-label">Save As</span>
+				</button>
+			</div>
+
+		</div>
+
+		<div id="center-container">
+			<div class="top-run-bar shadow">
+				<div class="run-btn-container">
+					<button class="mdc-button mdc-button--raised mdc-button--leading" id="run-btn">
+						<span class="mdc-button__ripple" id="run_btn_ripple"></span>
+						<i class="material-icons mdc-button__icon" aria-hidden="true" id="play-icon">play_circle_filled</i>
+						<span class="mdc-button__label" id="run-btn-label">Run</span>
+					</button>
+				</div>
+				<div class="mdc-touch-target-wrapper" id="advanced_settings_btn_container">
+					<button type="button" class="mdc-fab mdc-fab--mini mdc-fab--touch" id="advanced-settings-btn" data-bs-toggle="popover" data-bs-placement="bottom" title="Settings">
+						<div class="mdc-fab__ripple"></div>
+						<span class="material-icons mdc-fab__icon" id="advanced-settings-icon">settings</span>
+						<div class="mdc-fab__touch"></div>
+					</button>
+				</div>
+			</div>
+
+			<div class="inner-shadow" id="results-container">
+				<div id="calculation-progress" hidden=true>
+					<div id="progress-bar">10%</div>
+				</div>
+				<div class="loader" id="spinner" hidden=true></div>
+				<table id="results-table" ></table>
+			</div>
+		</div>
+
+		<div class="side-container" id="right-side-container">
+			<div class="top-corners inner-shadow" id="top-right-corner">
+			</div>
+			<div class="half-time-sets-container shadow">
+				<button class="mdc-button mdc-button--raised mdc-button--leading dropdown-toggle" id="half-time-btn"
+					data-bs-toggle="dropdown">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true"></i>
+					<span class="mdc-button__label text-alignment" id="half-time-label"
+						value="Haldane">Half-Time Sets</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2" id="half-time-sets">
+					<li><a class="dropdown-item half-time-item" value="Haldane">Haldane</a></li>
+					<li><a class="dropdown-item half-time-item" value="DSAT">DSAT</a></li>
+					<li><a class="dropdown-item half-time-item" value="Workman65">Workman65</a></li>
+					<li><a class="dropdown-item half-time-item" value="Buzzacott">Buzzacott</a></li>
+					<li><a class="dropdown-item half-time-item" value="ZH-L16A">ZH-L16A</a></li>
+					<li><a class="dropdown-item half-time-item" value="ZH-L16B">ZH-L16B</a></li>
+					<li><a class="dropdown-item half-time-item" value="ZH-L16C">ZH-L16C</a></li>
+				</ul>
+			</div>
+			<div class="toggle-btn-container shadow">
+				<button class="mdc-button mdc-button--raised mdc-button--leading" id="gf-btn">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true"></i>
+					<span class="mdc-button__label text-alignment" id="gf-label"
+						value="ON">Gradient Factor: ON</span>
+				</button>
+			</div>
+			<div class="toggle-btn-container shadow">
+				<button class="mdc-button mdc-button--raised mdc-button--leading" id="additional-cp-values-btn">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true"></i>
+					<span class="mdc-button__label text-alignment" id="additional-cp-values-label"
+						value="OFF">Additional CP Values: OFF</span>
+				</button>
+			</div>
+
+			<div class="gas-breathed-container shadow">
+				<button class="mdc-button mdc-button--raised mdc-button--leading dropdown-toggle" id="gas-btn"
+					data-bs-toggle="dropdown">
+					<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+					<i class="material-icons mdc-button__icon" aria-hidden="true"></i>
+					<span class="mdc-button__label text-alignment" id="gas-label" value="Air">Gas Combinations</span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark" aria-labelledby="dropdownMenuButton2"
+					id="gas-combinations">
+					<li><a class="dropdown-item gas-item" id="air-label" value="Air">Air</a></li>
+					<li><a class="dropdown-item gas-item" id="custom-label" value="Custom">Custom</a></li>
+				</ul>
+				<div class="custom-gas-container" id="custom-gas-main-container">
+					<div class="popup-container" id="custom-gas-popup">
+						<div id="gas-input-fields">
+							<label> O2 </label>
+							<input class="gas-input" id="o2-input" type="number" min="0" max="1" step="0.01" placeholder="0.21"> <br>
+							<label> He </label>
+							<input class="gas-input" id="he-input" type="number" min="0" max="1" step="0.01" placeholder="0.0"> <br>
+							<label> N2 </label>
+							<input class="gas-input" id="n2-input" type="number" min="0" max="1" step="0.01" placeholder="0.79"> <br>
+							<label id="start-time-label"> Start Time </label>
+							<input class="gas-input" id="start-time-input" type="number" min="0" step="0.01" placeholder="minutes">
+							<button class="mdc-button mdc-button--raised mdc-button--leading primary-button gas-input"
+								id="add-gas-btn">
+								<span class="mdc-button__ripple" id="upload_btn_ripple"></span>
+								<i class="material-icons mdc-button__icon" aria-hidden="true"></i>
+								<span class="mdc-button__label text-alignment" id="add-gas-btn-label" value="Air">Add
+									Gas</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script src="./fileInput.js"></script>
+			<script defer type="module" src="./GUILogic.js"></script>
+			<script src="./renderer.js"></script>
+			<script src="../electronJS/Imports/sweetalert.min.js"></script>
+		</div>
+	</div>
+	<script src="../electronJS/Imports/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
