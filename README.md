@@ -101,7 +101,7 @@ Upon re-installation ensure that the PATH variable is set. (there should be a ch
 In the event that there is not a checkbox, the user will have to do a custom install and check the box allowing the PATH variable to be updated.
 
 ##### Rpy2 Installation
-You may experience an issue regarding R not being on the path. The fix that worked for me (Alex) is setting an environment variable R_HOME, which should be the path to your R home directory.  
+1. You may experience an issue regarding R not being on the path. The fix that worked for me (Alex) is setting an environment variable R_HOME, which should be the path to your R home directory.
 For me (on MacOS), this was `/Library/Frameworks/R.framework/Resources`.  
 To find the correct filepath for you, open R/R-Studio and run the command `R.home()`. Then set the R_HOME variable to this filepath.   
 To set environment variable on MacOS/Linux: `export R_HOME='/My/File/Path'`
